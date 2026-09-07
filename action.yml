@@ -64,7 +64,7 @@ runs:
         sed -i "s/YML_CROWDIN_LANGUAGES_ARG/${{ inputs.YML_CROWDIN_LANGUAGES_ARG }}/g" crowdin.yml
 
     - name: Crowdin download
-      uses: crowdin/github-action@v2
+      uses: crowdin/github-action@v3
       with:
         upload_sources: false
         upload_translations: false
